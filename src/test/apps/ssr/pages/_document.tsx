@@ -3,7 +3,7 @@ import { withEmotionCache } from "tss-react/nextJs";
 import { createMuiCache } from "./_app";
 
 export default withEmotionCache({
-    "Document": BaseDocument,
+    "Document": BaseDocument as any,
     "getCaches": () => [createMuiCache()]
 });
 
